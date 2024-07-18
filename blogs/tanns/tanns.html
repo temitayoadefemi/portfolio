@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Conceptual Framework for Trie-Augmented Neural Networks (TANNs)</title>
+<style>
+    body {
+        font-family: 'Garamond', serif;
+        line-height: 1.6;
+        padding: 20px;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    }
+    img {
+        width: 100%; /* makes the image responsive */
+        height: auto;
+    }
+    h1 {
+        color: #333;
+    }
+    p {
+        text-align: justify;
+    }
+    .metadata {
+        text-align: center;
+        margin-top: 10px;
+        color: #555;
+        font-style: italic;
+    }
+    .author {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .footer {
+        font-size: 0.9em;
+        text-align: center;
+        margin-top: 20px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>A Conceptual Framework for Trie-Augmented Neural Networks (TANNs)</h1>
+    <img src="./TANN_concept.png" alt="Trie-Augmented Neural Network">
+    <div class="metadata">
+        <span class="author">rustian</span> <br>
+        Published in ILLUMINATION <br>
+        5 min read <br>
+        Published Jun 14, 2024
+    </div>
+    <p>Traditional machine learning models have demonstrated improved performance as more regularization techniques have been discovered and implemented. We’ve seen a wave of new model architectures ushered daily into the scientific community via numerous research methods. Yet, the question of interpretability still remains. We know these models work, but why do they work? How do they work? Can we trace back an output to an input, and how can we use that lineage to help us make better models and predictions in machine learning? This remains a mystery, one that is unlikely to be solved anytime soon. However, I have conceptualized a new architecture that could bring us ever closer.</p>
+    <p>This architecture is called a Trie-Augmented Neural Network (TANN), in which the hierarchical structure of tries is combined with the learning power of neural networks. By embedding a neural network in each trie node, we improve the interpretability and efficiency of neural networks. This setup creates an effective mapping that takes input from the trie’s root to the leaf node based on logical sequencing. It replicates the behavior of a trie structure, which searches for keys using strings.</p>
+    <p>This works by segmenting the input space of the data based on specified criteria used in the training and inference of the architecture. Numerous methods can be employed, and it is advised that different methodologies in training and inference should be experimented with due to the novelty and the conceptual basis and formulas of the architecture. The foundational pre-conceptual segmenting was designed to segment the input space based on the features of the neural network. This allows each network to possess a feature index and to learn a specific feature of the input space by directing the input either left or right, based on the feature value, the feature index, or both. This can be effectively accomplished by extracting the important features of the dataset.</p>
+    <p>Using this architecture, we can effectively understand at each step of the sequence, how the architecture is operating, how the input is being transformed and the descent from the node to the leaf node. This can significantly help us understand the interpretability of these models and we could also use partial dependence plots and Shapley values to help us interpret the model’s behavior better.</p>
+    <p>TANNs are network-agnostic, supporting various neural networks like Convolutional Neural Networks (CNNs), Feedforward Neural Networks (FNNs), and Recurrent Neural Networks (RNNs), depending on the task requirements at each node. This flexibility allows each node to address specific aspects of the problem, enhancing the system’s overall robustness by isolating input effects and facilitating independent optimization of each module. For instance, CNNs might be employed at nodes dealing with spatial data, while RNNs manage sequential data, optimizing processing across diverse data types. The hierarchical, modular design of TANNs naturally supports complex decision-making tasks that benefit from breaking down the problem into smaller, manageable segments, enabling more precise and scalable solutions.</p>
+    <p>We validated this architecture using neural network benchmarks based on the XOR, AND, and OR logic gates. Even using the same fixed hyperparameters demonstrated superior learning ability compared to a non-TANN implementation.</p>
+    <p>We also conducted tests comparing TANN implementations with non-TANN implementations across various neural network types, including Complex Valued Neurons, Convolutional Neural Networks, Feed-Forward Neural Networks (Multi-Layer Perceptron), and Recurrent Neural Networks. The TANN implementation consistently demonstrated superior learning ability across these networks.</p>
+    <p>We investigated the implementation’s performance across various trie depths using two text classification datasets: the 20 NewsGroup and the SMS Spam Dataset. Our approach utilized pre-conceptual training and inference mechanisms on recurrent and feed-forward neural networks. The results showed that TANNs performed comparably to non-TANN implementations.</p>
+    <p>I genuinely believe that TANNs can deliver a significant performance boost, especially in binary classification tasks where input segmentation is beneficial, such as the XOR and AND/OR problems. However, as this architecture is still in its preliminary stages, the optimal configurations and hyperparameters have yet to be determined. To fully realize its potential, training this architecture for longer periods or using more unconventional learning rates may be necessary.</p>
+    <p>Just as every new architecture has strengths, it also has limitations. It’s important to note that as the trie depth increases, the computational complexity of training and inferencing the model also increases. If the model in each node, or even just one specific node, is very complex, transforming an input to an output at that node can be computationally cumbersome. These are important considerations when implementing a TANN. A relatively simple and compact neural network would be ideal for each node in the TANN; an overly layered network is unnecessary.</p>
+    <p>In conclusion, the Trie-Augmented Neural Network (TANN) represents a promising new approach in machine learning, particularly for tasks that benefit from structured input segmentation, such as binary classification problems. While our initial tests using benchmarks like the XOR, AND/OR logic gates, and text classification datasets have shown that TANNs can perform comparably to or better than traditional neural network models, much remains to explore in optimizing this architecture. The increased computational complexity associated with deeper trie structures and more complex node models suggests a need for careful consideration in the design of each node’s network. Moving forward, continued experimentation with training durations, learning rates, and network configurations will be crucial in unlocking the full potential of TANNs. This architecture offers a new avenue for enhancing interpretability and efficiency in neural networks, promising significant advancements in data processing and analysis.</p>
+    <div class="footer">rustian ⚡️</div>
+</div>
+</body>
+</html>
