@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Functionality Driven Design: A Paradigm Shift in Software Architecture</title>
+<style>
+    body {
+        font-family: 'Garamond', serif;
+        line-height: 1.6;
+        padding: 20px;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    }
+    img {
+        width: 100%; /* makes the image responsive */
+        height: auto;
+    }
+    h1 {
+        color: #333;
+    }
+    p {
+        text-align: justify;
+    }
+    .metadata {
+        text-align: center;
+        margin-top: 10px;
+        color: #555;
+        font-style: italic;
+    }
+    .author {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .footer {
+        font-size: 0.9em;
+        text-align: center;
+        margin-top: 20px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Functionality Driven Design: A Paradigm Shift in Software Architecture</h1>
+    <div class="metadata">
+        <span class="author">rustian</span> <br>
+        6 min read <br>
+        Published Jan 17, 2024
+    </div>
+    <p>We have observed software architecture trends and methodologies evolve through various phases, with design, sketches, and concepts frequently emerging, dissolving, and reemerging. There was a time when monolithic architectures dominated, followed by the era of microkernel architecture with its plugin-based features. Now, we are in the age of microservices. However, ‘microservices’ has become such a buzzword that engineers and architects often implement it without fully understanding the underlying concept, its topological complexity, and the extensive infrastructure, costs, and insights required for sustainable implementation.</p>
+    <p>This misunderstanding has led to the deployment of microservices in systems where they are not truly necessary, continuing a pattern where even the smallest system concepts are implemented using microservices regardless of their actual need. Startups, even those with minimal funding, are adopting a microservices architecture without fully considering the significant costs and complexity required for such systems to operate effectively. Implementing microservices requires the integration, analysis, logging, and monitoring of multiple components, ideas, concepts, and theories to function at a high level. While it remains an important and crucial architecture, I am not a strong proponent of using this architecture in certain situations, especially where cost is a limiting factor. Despite its benefits like scalability, reliability, and fault tolerance, microservices address many issues that their predecessors couldn’t.</p>
+    <p>Microservices often follow a Domain Driven Design (DDD) philosophy, a software development approach centered around a domain, with the practice of equating a domain to a service in a high-level system. However, cloud computing has introduced several new concepts that were not feasible in the era of manually managed data centers. One such methodology is serverless computing, where the infrastructure is abstracted, and users pay only for the resources they use. This has inspired what I call Functionality Driven Design (FDD). I believe microservices can be further decoupled from domains to functionalities while using abstracted servers, improving scalability, cost-effectiveness, and simplicity.</p>
+    <p>FDD focuses on the specific functionalities required by a system rather than on broader domain models. In FDD, containers are replaced with serverless pods, each mapped to a specific functionality like an API or message queue. These services can be scaled based on demand and don’t need to run indefinitely, addressing the cost issues of a microservices architecture. This approach is particularly suited for startups facing unpredictable demands and limited budgets. Serverless technologies, operating on a pay-as-you-go model, are ideal for such operations. FDD also provides a platform for startups to build an MVP with only the necessary functionalities, leading to faster market entry.</p>
+    <p>In conclusion, Functionality Driven Design (FDD) represents a significant shift in software architecture, moving away from the broader domain-centric approach of Domain Driven Design (DDD) towards a more granular, functionality-focused methodology. By emphasizing minimalism, responsiveness, and independence/decoupling, FDD aligns well with the dynamic needs of startups and businesses operating under constraints of budget and time. It leverages serverless technologies to provide a cost-effective and scalable solution, enabling organizations to deploy only the necessary functionalities with minimal overhead.</p>
+    <p>FDD's minimalist approach ensures that every integrated functionality is essential, reducing operational costs and enabling quicker market entry. Its responsiveness, facilitated by serverless computing, aligns with the financial and operational realities of companies with limited budgets, paying only for the resources used. The independence and decoupling principle in FDD allow for easier maintenance and scalability, as each functionality is developed as a separate, independently deployable unit, reducing the risk and complexity associated with updates and changes.</p>
+    <p>This philosophy, therefore, offers a viable alternative to traditional models, particularly in an era where agility, cost-effectiveness, and rapid deployment are crucial. FDD could be the answer for startups and organisations looking to innovate swiftly and efficiently, providing a framework that aligns with the evolving landscape of cloud computing and the ever-changing demands of the tech industry.</p>
+    <div class="footer">rustian ⚡️</div>
+</div>
+</body>
+</html>
