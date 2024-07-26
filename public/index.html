@@ -3,111 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>rustian</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Importing Font Awesome CSS for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>rustian</title>
     <style>
         body {
             font-family: 'EB Garamond', serif;
-            line-height: 1.6;
+            line-height: 1.8; /* Increased line spacing */
             color: #333;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0;
-        }
-        h2 {
-            font-size: 1.5em;
-            color: #666;
-            margin-top: 0;
+            padding: 20px; /* Increased padding */
         }
         nav {
-            margin-bottom: 20px;
+            margin-bottom: 30px; /* Increased bottom margin */
         }
         nav a {
-            margin-right: 15px;
+            margin-right: 20px; /* Increased margin */
             text-decoration: none;
-            color: #666;
+            color: #444444;
         }
-        img {
-            max-width: 200px;
-            border-radius: 10px;
+        h3, h4, h5, h6 {
+            margin-top: 20px; /* Increased top margin */
+            margin-bottom: 10px; /* Increased bottom margin */
         }
         .social-icons {
-            font-size: 24px;
-            margin: 20px 0;
-        }
-        .social-icons a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #333;
+            margin-bottom: 30px; /* Increased bottom margin */
         }
         .publication {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            margin-bottom: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: .25rem;
+            padding: 20px; /* Increased padding */
+            margin-bottom: 30px; /* Increased bottom margin */
         }
-        .publication h3 {
-            margin-top: 0;
-        }
-        .publication img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .tag {
-            background-color: #e0e0e0;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 0.8em;
-            margin-right: 5px;
-    }
         .tag a {
-            color: #000000; /* Light blue color */
-            text-decoration: none; /* No underline */
-    }
+            background-color: #444444;
+            color: #fff;
+            padding: .25rem .75rem; /* Increased padding */
+            border-radius: .25rem;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="poem.html">Poems</a>
+    <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="blog.html">Blog</a>
+        <a class="nav-link" href="poem.html">Poems</a>
     </nav>
 
-    <h1>Temitayo Adefemi (0xrustian)</h1>
-    <h2>MSc Student at University of Edinburgh</h2>
+    <h3>Temitayo Adefemi (0xrustian)</h3>
+    <h4 class="font-weight-light">MSc Student at University of Edinburgh</h4>
 
     <div class="social-icons">
-        <a href="https://github.com/temitayoadefemi" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/0xrustian" title="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/temitayo-adefemi-ba781713b/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://medium.com/@0xrustian" title="Medium"><i class="fab fa-medium"></i></a>
+        <a href="https://github.com/temitayoadefemi" class="btn btn-outline-dark btn-sm" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/0xrustian" class="btn btn-outline-dark btn-sm" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/temitayo-adefemi-ba781713b/" class="btn btn-outline-dark btn-sm" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://medium.com/@0xrustian" class="btn btn-outline-dark btn-sm" title="Medium"><i class="fab fa-medium"></i></a>
     </div>
 
-    <h3>About Me</h3>
-    <p>I'm an MSc student at the University of Edinburgh studying High Performance Computing. I have many interests which include compilers, computer architecture, machine learning systems, affective computing, theory of computation, hardware, algorithms, robotics, distributed systems, P vs NP, HPC, data science, concurrent computing (I also love physics, maths, philosophy & literature). I'm currently working on a paper that examines the performance of two implementations of a parallel adaptive quadrature algorithm using OpenMP. </p>
+    <h5>About Me</h5>
+    <p>I'm an MSc student at the University of Edinburgh studying High Performance Computing. I have many interests which include compilers, computer architecture, machine learning systems, affective computing, theory of computation, hardware, algorithms, robotics, distributed systems, P vs NP, HPC, data science, concurrent computing (I also love business, physics, maths, philosophy & literature). I'm currently working on a paper that examines the performance of two implementations of a parallel adaptive quadrature algorithm using OpenMP and also a document about optimizing serial and parallel matrix multiplication</p>
 
-    <h3>Papers I've Written</h3>
+    <h5>Papers I've Written</h5>
 
     <div class="publication">
-        <h3>A Conceptual Framework for Trie-Augmented Neural Networks (TANNS)</h3>
+        <h6>A Conceptual Framework for Trie-Augmented Neural Networks (TANNS)</h6>
         <p><span class="tag"><a href="https://arxiv.org/abs/2406.10270" target="_blank">arXiv</a></span></p>
         <p>Temitayo Adefemi</p>
-        <p>I combined trie data structures with neural networks to improve interpretability and efficiency.</p>
+        <p>Combining trie data structures with neural networks to enhance interpretability and efficiency.</p>
     </div>
 
     <div class="publication">
-        <h3>Cellular Automata as a Network Topology</h3>
+        <h6>Cellular Automata as a Network Topology</h6>
         <p><span class="tag"><a href="https://arxiv.org/abs/2407.05048" target="_blank">arXiv</a></span></p>
         <p>Temitayo Adefemi</p>
-        <p>I show that cellular automata can be used to model network topologies.</p>
+        <p>Exploring cellular automata as models for network topologies.</p>
     </div>
 </body>
+</html>
