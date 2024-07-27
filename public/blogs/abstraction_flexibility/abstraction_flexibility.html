@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introducing Abstraction Flexibility in High-Level Languages</title>
-<style>
-    body {
-        font-family: 'EB Garamond', serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .container {
-        max-width: 800px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-    }
-    img {
-        width: 100%; /* makes the image responsive */
-        height: auto;
-    }
-    h1 {
-        color: #333;
-    }
-    p {
-        text-align: justify;
-    }
-    .metadata {
-        text-align: center;
-        margin-top: 10px;
-        color: #555;
-        font-style: italic;
-    }
-    .author {
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .footer {
-        font-size: 0.9em;
-        text-align: center;
-        margin-top: 20px;
-        color: #666;
-    }
-</style>
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introducing Abstraction Flexibility in High-Level Languages</title>
+        <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <style>
+
+body {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+img {
+    width: 100%; /* makes the image responsive */
+    height: auto;
+    margin-bottom: 20px;
+}
+h4 {
+    margin-top: 20px; /* Reduced top margin to zero */
+    margin-bottom: 20px;
+}
+p {
+    text-align: justify;
+}
+.metadata {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+    font-style: italic;
+}
+.author {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+     </style>
+    </head>
 <body>
 <div class="container">
-    <h1>Introducing Abstraction Flexibility in High-Level Languages</h1>
-    <img src="./abstraction_flexibility.png" alt="Abstraction Flexibility in High-Level Languages">
-    <div class="metadata">
-        <span class="author">rustian</span> <br>
-        3 min read <br>
-        Published Jan 22, 2024
-    </div>
+    <h4>Introducing Abstraction Flexibility in High-Level Languages</h4>
+    <img src="./abstraction_flexibility.png" alt="Abstraction Flexibility in High-Level Languages"  class="img-fluid rounded">
     <p>There are so many ideas, projects, and programming tasks. Companies or individuals would love to create them. They are stuck between two worlds. Do I use the low-level, memory-efficient, potentially optimized, customized, and power-efficient paradigms of low-level languages? Or should I pick the heavily abstracted, intuitive, potentially slower, and potentially unpredictable footprint on both computation and memory? This has been the narrative for a long time.</p>
     <p>Obviously, there are problems & projects best suited for low-level languages. There are concepts and generalizations best suited for high-level languages. But what happens to problems when you want to use both benefits? You want the benefits of high-level languages and also the benefits of low-level languages. It would be very difficult to raise the abstraction of the low-level language to fit the paradigm. But what if we can lower the abstraction of the high-level language? Or even better, what if we can tune the abstraction of the high-level language? For example, some objects, classes, and functions could go below their current level of abstraction. This can provide significant benefits. It can provide benefits in areas of optimizations, flexibility, and a broader range of uses.</p>
     <p>We sometimes write a Python function which has a heavy footprint on memory. This is especially true if we are using a very large tensor. We don’t want to use C++ or C. They don’t provide the libraries, tools, ecosystem, or infrastructure needed. We would need these to create this function in the best possible way. But we want to deploy this function. Our server is limited in terms of memory. This limitation could be due to low disk size, a multitude of data stored on our server, or other reasons. What if we can dig deeper into the Python function? What if we find exactly where the tensor is being stored on memory? And potentially optimize it by methods such as compression and other optimization methods? This would provide substantial benefits. It would increase the flexibility and optimization possibilities of high-level languages. These possibilities were not possible before.</p>
