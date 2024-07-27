@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Functionality Driven Design: A Paradigm Shift in Software Architecture</title>
-<style>
-     body {
-        font-family: 'EB Garamond', serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .container {
-        max-width: 800px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-    }
-    img {
-        width: 100%; /* makes the image responsive */
-        height: auto;
-    }
-    h1 {
-        color: #333;
-    }
-    p {
-        text-align: justify;
-    }
-    .metadata {
-        text-align: center;
-        margin-top: 10px;
-        color: #555;
-        font-style: italic;
-    }
-    .author {
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .footer {
-        font-size: 0.9em;
-        text-align: center;
-        margin-top: 20px;
-        color: #666;
-    }
-</style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functionality Driven Design: A Paradigm Shift in Software Architecture</title>
+        <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+   
+   body {
+       font-family: 'EB Garamond', serif;
+       line-height: 1.6;
+       color: #333;
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 20px;
+   }
+   .container {
+       max-width: 800px;
+       margin: auto;
+       background: white;
+       padding: 20px;
+       box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+   }
+   img {
+       width: 100%; /* makes the image responsive */
+       height: auto;
+       margin-bottom: 20px;
+   }
+   h4 {
+       margin-top: 20px; /* Reduced top margin to zero */
+       margin-bottom: 20px;
+   }
+   p {
+       text-align: justify;
+   }
+   .metadata {
+       text-align: center;
+       margin-top: 10px;
+       color: #555;
+       font-style: italic;
+   }
+   .author {
+       font-weight: bold;
+       margin-bottom: 10px;
+   }
+   .footer {
+       font-size: 0.9em;
+       text-align: center;
+       margin-top: 20px;
+       color: #666;
+   }
+        </style>
+    </head>
 <div class="container">
-    <h1>Functionality Driven Design: A Paradigm Shift in Software Architecture</h1>
-    <img src="./functionality_driven_design.png" alt="Functionality Driven Design">
-    <div class="metadata">
-        <span class="author">rustian</span> <br>
-        6 min read <br>
-        Published Jan 17, 2024
-    </div>
+    <h4>Functionality Driven Design: A Paradigm Shift in Software Architecture</h4>
+    <img src="./functionality_driven_design.png" alt="Functionality Driven Design" class="img-fluid rounded">
     <p>We have observed software architecture trends and methodologies evolve through various phases, with design, sketches, and concepts frequently emerging, dissolving, and reemerging. There was a time when monolithic architectures dominated, followed by the era of microkernel architecture with its plugin-based features. Now, we are in the age of microservices. However, ‘microservices’ has become such a buzzword that engineers and architects often implement it without fully understanding the underlying concept, its topological complexity, and the extensive infrastructure, costs, and insights required for sustainable implementation.</p>
     <p>This misunderstanding has led to the deployment of microservices in systems where they are not truly necessary, continuing a pattern where even the smallest system concepts are implemented using microservices regardless of their actual need. Startups, even those with minimal funding, are adopting a microservices architecture without fully considering the significant costs and complexity required for such systems to operate effectively. Implementing microservices requires the integration, analysis, logging, and monitoring of multiple components, ideas, concepts, and theories to function at a high level. While it remains an important and crucial architecture, I am not a strong proponent of using this architecture in certain situations, especially where cost is a limiting factor. Despite its benefits like scalability, reliability, and fault tolerance, microservices address many issues that their predecessors couldn’t.</p>
     <p>Microservices often follow a Domain Driven Design (DDD) philosophy, a software development approach centered around a domain, with the practice of equating a domain to a service in a high-level system. However, cloud computing has introduced several new concepts that were not feasible in the era of manually managed data centers. One such methodology is serverless computing, where the infrastructure is abstracted, and users pay only for the resources they use. This has inspired what I call Functionality Driven Design (FDD). I believe microservices can be further decoupled from domains to functionalities while using abstracted servers, improving scalability, cost-effectiveness, and simplicity.</p>
