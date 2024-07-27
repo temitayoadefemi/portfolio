@@ -1,63 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Conceptual Framework for Trie-Augmented Neural Networks (TANNs)</title>
-<style>
-    body {
-        font-family: 'EB Garamond', serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .container {
-        max-width: 800px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-    }
-    img {
-        width: 100%; /* makes the image responsive */
-        height: auto;
-    }
-    h1 {
-        color: #333;
-    }
-    p {
-        text-align: justify;
-    }
-    .metadata {
-        text-align: center;
-        margin-top: 10px;
-        color: #555;
-        font-style: italic;
-    }
-    .author {
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .footer {
-        font-size: 0.9em;
-        text-align: center;
-        margin-top: 20px;
-        color: #666;
-    }
-</style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Conceptual Framework for Trie-Augmented Neural Networks (TANNs)</title>
+        <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+   
+   body {
+       font-family: 'EB Garamond', serif;
+       line-height: 1.6;
+       color: #333;
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 20px;
+   }
+   .container {
+       max-width: 800px;
+       margin: auto;
+       background: white;
+       padding: 20px;
+       box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+   }
+   img {
+       width: 100%; /* makes the image responsive */
+       height: auto;
+       margin-bottom: 20px;
+   }
+   h4 {
+       margin-top: 20px; /* Reduced top margin to zero */
+       margin-bottom: 20px;
+   }
+   p {
+       text-align: justify;
+   }
+   .metadata {
+       text-align: center;
+       margin-top: 10px;
+       color: #555;
+       font-style: italic;
+   }
+   .author {
+       font-weight: bold;
+       margin-bottom: 10px;
+   }
+   .footer {
+       font-size: 0.9em;
+       text-align: center;
+       margin-top: 20px;
+       color: #666;
+   }
+        </style>
+    </head>
 <body>
 <div class="container">
-    <h1>A Conceptual Framework for Trie-Augmented Neural Networks (TANNs)</h1>
-    <img src="./tanns.png" alt="Trie-Augmented Neural Network">
-    <div class="metadata">
-        <span class="author">rustian</span> <br>
-        5 min read <br>
-        Published Jun 14, 2024
-    </div>
+    <h4>A Conceptual Framework for Trie-Augmented Neural Networks (TANNs)</h4>
+    <img src="./tanns.png" alt="Trie-Augmented Neural Network" class="img-fluid rounded">
     <p>Traditional machine learning models have demonstrated improved performance as more regularization techniques have been discovered and implemented. We’ve seen a wave of new model architectures ushered daily into the scientific community via numerous research methods. Yet, the question of interpretability still remains. We know these models work, but why do they work? How do they work? Can we trace back an output to an input, and how can we use that lineage to help us make better models and predictions in machine learning? This remains a mystery, one that is unlikely to be solved anytime soon. However, I have conceptualized a new architecture that could bring us ever closer.</p>
     <p>This architecture is called a Trie-Augmented Neural Network (TANN), in which the hierarchical structure of tries is combined with the learning power of neural networks. By embedding a neural network in each trie node, we improve the interpretability and efficiency of neural networks. This setup creates an effective mapping that takes input from the trie’s root to the leaf node based on logical sequencing. It replicates the behavior of a trie structure, which searches for keys using strings.</p>
     <p>This works by segmenting the input space of the data based on specified criteria used in the training and inference of the architecture. Numerous methods can be employed, and it is advised that different methodologies in training and inference should be experimented with due to the novelty and the conceptual basis and formulas of the architecture. The foundational pre-conceptual segmenting was designed to segment the input space based on the features of the neural network. This allows each network to possess a feature index and to learn a specific feature of the input space by directing the input either left or right, based on the feature value, the feature index, or both. This can be effectively accomplished by extracting the important features of the dataset.</p>
