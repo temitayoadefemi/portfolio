@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,35 +17,55 @@
             margin: 0 auto;
             padding: 20px;
         }
+
         nav {
             margin-bottom: 20px;
         }
+
         nav a {
             margin-right: 15px;
             text-decoration: none;
             color: #666;
         }
+
         h3 {
             margin-top: 20px;
-            margin-bottom: 0px; /* Reduced bottom margin to zero */
+            margin-bottom: 0px;
         }
+
         h4 {
-            margin-top: 10px; /* Reduced top margin to zero */
+            margin-top: 10px;
             margin-bottom: 10px;
         }
-        h5, h6 {
+
+        h5,
+        h6 {
             margin-top: 20px;
             margin-bottom: 10px;
         }
+
         .social-icons {
             margin-bottom: 30px;
         }
+
+        .container-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+
+        .section {
+            width: 48%;
+        }
+
         .publication {
             border: 1px solid #dee2e6;
             border-radius: .25rem;
             padding: 20px;
             margin-bottom: 30px;
         }
+
         .tag a {
             background-color: #444444;
             color: #fff;
@@ -53,15 +74,14 @@
             text-decoration: none;
         }
     </style>
-    
 </head>
+
 <body>
     <nav class="nav">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="blog.html">Blog</a>
         <a class="nav-link" href="poem.html">Poems</a>
     </nav>
-
 
     <h3>Temitayo Adefemi (0xrustian)</h3>
     <h4 class="font-weight-light">MSc Student at University of Edinburgh</h4>
@@ -74,22 +94,55 @@
     </div>
 
     <h5>About Me</h5>
-    <p>I'm an MSc student at the University of Edinburgh studying High Performance Computing. I have many interests which include compilers, computer architecture, machine learning systems, affective computing, theory of computation, hardware, algorithms, robotics, distributed systems, P vs NP, HPC, data science, concurrent computing and more (I also love business, physics, maths, philosophy & literature) . I'm currently working on a paper that examines the performance of two implementations of a parallel adaptive quadrature algorithm using OpenMP and also a document about optimizing serial and parallel matrix multiplication</p>
+    <p>I'm an MSc student at the University of Edinburgh studying High Performance Computing. I have many interests which include compilers, computer architecture, machine learning systems, affective computing, theory of computation, hardware, algorithms, robotics, distributed systems, P vs NP, HPC, data science, concurrent computing, and more. (I also love business, physics, maths, philosophy & literature). I'm currently working on a paper that examines the performance of two implementations of a parallel adaptive quadrature algorithm using OpenMP and a document about optimizing serial and parallel matrix multiplication.</p>
 
-    <h5>Papers I've Written</h5>
+    <div class="container-flex">
+        <div class="section">
+            <h5>Papers I've Written</h5>
+            <div class="publication">
+                <h6>A Conceptual Framework for Trie-Augmented Neural Networks (TANNS)</h6>
+                <p><span class="tag"><a href="https://arxiv.org/abs/2406.10270" target="_blank">arXiv</a></span></p>
+                <p>Temitayo Adefemi</p>
+                <p>Combining trie data structures with neural networks to enhance interpretability and efficiency.</p>
+            </div>
 
-    <div class="publication">
-        <h6>A Conceptual Framework for Trie-Augmented Neural Networks (TANNS)</h6>
-        <p><span class="tag"><a href="https://arxiv.org/abs/2406.10270" target="_blank">arXiv</a></span></p>
-        <p>Temitayo Adefemi</p>
-        <p>Combining trie data structures with neural networks to enhance interpretability and efficiency.</p>
-    </div>
+            <div class="publication">
+                <h6>Cellular Automata as a Network Topology</h6>
+                <p><span class="tag"><a href="https://arxiv.org/abs/2407.05048" target="_blank">arXiv</a></span></p>
+                <p>Temitayo Adefemi</p>
+                <p>Exploring cellular automata as models for network topologies.</p>
+            </div>
 
-    <div class="publication">
-        <h6>Cellular Automata as a Network Topology</h6>
-        <p><span class="tag"><a href="https://arxiv.org/abs/2407.05048" target="_blank">arXiv</a></span></p>
-        <p>Temitayo Adefemi</p>
-        <p>Exploring cellular automata as models for network topologies.</p>
+            <div class="publication">
+                <h6>Analysis of the Performance of the Matrix Multiplication Algorithm on the Cirrus Supercomputer</h6>
+                <p><span class="tag"><a href="https://arxiv.org/abs/2408.15384" target="_blank">arXiv</a></span></p>
+                <p>Temitayo Adefemi</p>
+                <p>Analysing the performance of the serial and parallel matrix multiplication algorithm.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h5>Projects</h5>
+            <div class="publication">
+                <h6>Kokoca</h6>
+                <p><span class="tag"><a href="https://download.cnet.com/kokoca/3000-2351_4-78704365.html" target="_blank">CNET</a></span></p>
+                <p>A word processor made in C# and Visual Studio which included paraphrasing, referencing, word count setting, browsing the
+                    web, file attachments, notes taking, format switching and more.</p>
+            </div>
+
+            <div class="publication">
+                <h6>Deterministic Cellular Automata using Message Passing Interface </h6>
+                <p><span class="tag"><a href="https://github.com/temitayoadefemi/mpi-cellular-automaton" target="_blank"></a></span></p>
+                <p>This project implements a two-dimensional Cellular Automaton using domain decomposition and non-blocking communications, suitable for both serial and parallel execution via message-passing programming. The code implements new boundary conditions for both the serial version and the parallel version of the code.</p>
+            </div>
+
+            <div class="publication">
+                <h6>Predator-Prey-simulation</h6>
+                <p><span class="tag"><a href="https://github.com/temitayoadefemi/predator-prey-simulation" target="_blank">GitHub</a></span></p>
+                <p>A predator-prey simulation modelled using differential equations in Python.</p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
